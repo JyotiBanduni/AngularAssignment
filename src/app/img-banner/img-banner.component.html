@@ -1,0 +1,5 @@
+<ng-container class="container" >
+  <p>img-banner works!</p>
+  <div [hidden]="!Loader" class="spinner-border"></div>
+  <img [hidden]="Loader"  [src]="imagSource" [alt]="altText" [height]="imgHeight" [width]="imgWidth" (click)="clicked()" (error)="Error()" (load)="this.Loader=false;">
+</ng-container>

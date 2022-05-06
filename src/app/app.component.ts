@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Image';
+  ClickedBy(ClickedBy){
+    console.log("I'm being clicked by parent method");
+  }
 }
